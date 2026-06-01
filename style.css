@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f3dada;
+    background: #dec4e5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,9 +8,9 @@ body {
 }
 
 .quiz-container {
-    background: rgb(170, 123, 184);
-    padding: 30px;
-    border-radius: 10px;
+    background: rgb(153, 101, 170);
+    padding: 90px;
+    border-radius: 15px;
     width: 400px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -27,7 +27,7 @@ h1 {
     margin: 10px 0;
     padding: 10px;
     border: none;
-    background: rgb(155, 73, 155);
+    background: rgb(102, 42, 102);
     color: white;
     border-radius: 50px;
     cursor: pointer;
