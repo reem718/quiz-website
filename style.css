@@ -8,7 +8,7 @@ body {
 }
 
 .quiz-container {
-    background: white;
+    background: rgb(170, 123, 184);
     padding: 30px;
     border-radius: 10px;
     width: 400px;
@@ -65,7 +65,7 @@ h1 {
 #start-btn {
     padding: 10px 20px;
     border: none;
-    background: #3498db;
+    background: purple;
     color: white;
     border-radius: 5px;
     cursor: pointer;
