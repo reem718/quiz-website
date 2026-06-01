@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #e5aaaa;
+    background: #f3dada;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,3 +52,33 @@ h1 {
 .hidden {
     display: none;
 }
+
+
+
+#username {
+    width: 90%;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+#start-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#profile {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#history-list {
+    padding-left: 20px;
+}
+
+
+
