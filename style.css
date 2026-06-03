@@ -9,6 +9,10 @@ body {
 
 .quiz-container {
     background: rgb(153, 101, 170);
+        background: rgb(191, 154, 203);
+                background: rgb(166, 133, 176);
+
+
     padding: 90px;
     border-radius: 15px;
     width: 400px;
@@ -27,7 +31,9 @@ h1 {
     margin: 10px 0;
     padding: 10px;
     border: none;
-    background: rgb(102, 42, 102);
+    background: rgb(84, 55, 94);
+        background: rgb(103, 70, 116);
+
     color: white;
     border-radius: 50px;
     cursor: pointer;
@@ -35,7 +41,8 @@ h1 {
 }
 
 .option-btn:hover {
-    background: rgb(155, 73, 155);
+    background: rgb(199, 156, 199);
+
 }
 
 #next-btn,
@@ -43,7 +50,8 @@ h1 {
     margin-top: 20px;
     padding: 10px 20px;
     border: none;
-    background: purple;
+    background: rgb(103, 70, 116);
+
     color: white;
     border-radius: 5px;
     cursor: pointer;
