@@ -48,10 +48,12 @@ const restartButton = document.getElementById("restart-btn");
 const startScreen = document.getElementById("start-screen");
 const startBtn = document.getElementById("start-btn");
 const usernameInput = document.getElementById("username");
+const regnoInput = document.getElementById("regno");
 
 // Profile Elements
 const profile = document.getElementById("profile");
 const profileName = document.getElementById("profile-name");
+const profileRegno = document.getElementById("profile-regno");
 const bestScore = document.getElementById("best-score");
 const historyList = document.getElementById("history-list");
 
@@ -59,13 +61,15 @@ const historyList = document.getElementById("history-list");
 startBtn.addEventListener("click", () => {
 
     username = usernameInput.value.trim();
+    const regno = regnoInput.value.trim();
 
-    if (username === "") {
-        alert("Please enter your name");
+    if (username === "" || regno === "") {
+        alert("Please enter Name and Registration Number");
         return;
     }
 
     localStorage.setItem("username", username);
+    localStorage.setItem("regno", regno);
 
     startScreen.classList.add("hidden");
     quizBox.classList.remove("hidden");
@@ -83,7 +87,6 @@ function loadQuestion() {
     optionButtons.forEach((button, index) => {
 
         button.innerText = current.options[index];
-
         button.disabled = false;
 
         button.onclick = () => {
@@ -115,11 +118,8 @@ nextButton.addEventListener("click", () => {
     currentQuestion++;
 
     if (currentQuestion < questions.length) {
-
         loadQuestion();
-
     } else {
-
         showResult();
     }
 
@@ -161,7 +161,11 @@ function displayProfile() {
     const savedName =
         localStorage.getItem("username");
 
+    const savedRegno =
+        localStorage.getItem("regno");
+
     profileName.textContent = savedName;
+    profileRegno.textContent = savedRegno;
 
     let history =
         JSON.parse(localStorage.getItem("scores")) || [];
