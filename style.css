@@ -8,11 +8,7 @@ body {
 }
 
 .quiz-container {
-    background: rgb(153, 101, 170);
-        background: rgb(191, 154, 203);
-                background: rgb(166, 133, 176);
-
-
+    background: rgb(166, 133, 176);
     padding: 90px;
     border-radius: 15px;
     width: 400px;
@@ -31,9 +27,7 @@ h1 {
     margin: 10px 0;
     padding: 10px;
     border: none;
-    background: rgb(84, 55, 94);
-        background: rgb(103, 70, 116);
-
+    background: rgb(103, 70, 116);
     color: white;
     border-radius: 50px;
     cursor: pointer;
@@ -45,7 +39,19 @@ h1 {
 
 }
 
-#next-btn,
+#next-btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: rgb(103, 70, 116);
+
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
 #restart-btn {
     margin-top: 20px;
     padding: 10px 20px;
@@ -73,7 +79,8 @@ h1 {
 #start-btn {
     padding: 10px 20px;
     border: none;
-    background: purple;
+    background: rgb(103, 70, 116);
+
     color: white;
     border-radius: 5px;
     cursor: pointer;
